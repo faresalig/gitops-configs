@@ -22,7 +22,7 @@ images:
     newTag: latest
   - name: farespro/goal-tracker-bakend
     newTag: latest
-  - name: postgres
+  - name: farespro/postgres
     newTag: "15"
 
 # Resource configurations - replica scaling only

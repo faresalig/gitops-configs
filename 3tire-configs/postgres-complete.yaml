@@ -31,7 +31,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: postgres
-          image: postgres # Tag managed by kustomization.yaml
+          image: farespro/postgres # Tag managed by kustomization.yaml
           ports:
             - containerPort: 5432
           env:
