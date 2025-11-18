@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 # Target namespace for all resources
-namespace: 3tirewebapp-dev
+namespace: 3tirewebapp-test
 
 # Resources to include
 resources:
@@ -18,9 +18,9 @@ commonAnnotations:
 
 # Centralized image management
 images:
-  - name: itsbaivab/frontend
-    newTag: v2
-  - name: itsbaivab/backend
+  - name: farespro/goal-tracker-frontend
+    newTag: latest
+  - name: farespro/goal-tracker-bakend
     newTag: latest
   - name: postgres
     newTag: "15"

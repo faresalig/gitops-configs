@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: 3tirewebapp-dev
+  name: 3tirewebapp-test
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/itsBaivab/gitops-configs.git
+    repoURL: https://github.com/faresalig/gitops-configs.git
     targetRevision: HEAD
     path: 3tire-configs
   destination:
     server: https://kubernetes.default.svc
-    namespace: 3tirewebapp-dev
+    namespace: 3tirewebapp-test
   syncPolicy:
     automated:
       prune: true
